@@ -1,0 +1,59 @@
+</select>
+        </label>
+      </div>
+
+      <div class="row" style="margin-top:14px; gap:10px">
+        <button id="btnPropose" class="primary">Propose Intent</button>
+        <button id="btnCopyIntent" class="ghost" disabled>Copy Intent JSON</button>
+      </div>
+    </section>
+
+    <!-- Proposed intent preview -->
+    <section class="panel">
+      <div class="row" style="justify-content:space-between; align-items:flex-end">
+        <h2 class="h">Proposed Intent</h2>
+        <div class="pill muted" id="intentMeta">—</div>
+      </div>
+      <pre id="intentJson" class="pre muted">(compose an intent above)</pre>
+    </section>
+
+    <!-- Solver simulation -->
+    <section class="panel">
+      <h2 class="h">Simulate Solve</h2>
+      <div class="row" style="gap:10px; flex-wrap:wrap">
+        <button id="btnSolve" class="primary" disabled>Simulate Solve</button>
+        <button id="btnReset" class="ghost">Reset</button>
+      </div>
+
+      <div id="solveArea" class="grid" style="margin-top:14px; display:none">
+        <div class="row kpis">
+          <div class="kpi"><div class="k">Mechanism</div><div class="v" id="kMechanism">—</div></div>
+          <div class="kpi"><div class="k">ETA</div><div class="v" id="kEta">—</div></div>
+          <div class="kpi"><div class="k">Est. Fee</div><div class="v" id="kFee">—</div></div>
+          <div class="kpi"><div class="k">MEV Risk</div><div class="v" id="kMev">—</div></div>
+          <div class="kpi"><div class="k">Match Score</div><div class="v" id="kScore">—</div></div>
+        </div>
+
+        <div class="route">
+          <div class="rhead">Candidate Route</div>
+          <ol id="routeList" class="rlist"></ol>
+        </div>
+
+        <div class="row" style="gap:10px; flex-wrap:wrap">
+          <button id="btnSettle" class="good" disabled>Simulate Settlement</button>
+          <button id="btnCopySolve" class="ghost" disabled>Copy Solve Summary</button>
+        </div>
+
+        <div id="settleBox" class="settle muted">—</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="muted small">
+      Demo for showcasing <strong>intent-centric UX</strong>: intent → discovery → solve → settle, with constraints. No wallet, no backend. Everything here is simulated for presentation purposes.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

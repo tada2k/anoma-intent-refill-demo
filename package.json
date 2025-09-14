@@ -1,0 +1,7 @@
+{
+  "name": "anoma-intent-refill-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static prototype: intent-centric gas refill UX (compose → solve → settle).",
+  "license": "MIT"
+}
